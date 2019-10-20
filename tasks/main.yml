@@ -1,5 +1,6 @@
 ---
-- fail:
+- name: "Check whether the os system is suported"
+  fail:
     msg: "This OS system is not supported yet!"
   when:
     - "ansible_system|lower != 'linux'"
