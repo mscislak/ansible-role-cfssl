@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Maros Scislak
   description: "Download CloudFlare's PKI/TLS toolkit"
