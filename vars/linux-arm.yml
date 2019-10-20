@@ -1,0 +1,12 @@
+---
+cfssl_os: "linux"
+cfssl_arch: "arm"
+cfssl_checksums:
+  cfssl: "sha256:11c708acaf48a69abf6f896f5c6158f7547a3c1bf44e14ca3b3ab440c1f808f1"
+  cfssljson: "sha256:e138102329d96f5a67aa168034a256a8376febf4ecde7b8e837c3f2e08b1cd19"
+  cfssl-bundle: "sha256:0725a1cca3857392158807b543b75dc6388e2102e8a189792c4da7ac19f750b5"
+  cfssl-certinfo: "sha256:48685e849565cd7d27ac2daf68faa835a5151fd3feac87c6715bcb92d58dc280"
+  cfssl-newkey: "sha256:4106c11c61aa9e98b1967adab6db711d2b50a0f02f844329e9ad44f199bdf135"
+  cfssl-scan: "sha256:71e41ef447f49ad236d75ec42152625c6fcf6c37122784740bd19b0a7c399560"
+  mkbundle: "sha256:dac738390bc346b94c497b62a82f75cb05f0dafd5dad7d9dd63dedb9bc31092a"
+  multirootca: "sha256:d53bbc0d2ac2d57c089d4f730d9e7b2d365701adc1bb417153a5f70a16bd10d6"

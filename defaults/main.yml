@@ -1,1 +1,16 @@
 ---
+cfssl_version: "R1.2"
+cfssl_bin_dir: "/usr/local/bin"
+cfssl_os: "linux"
+cfssl_arch: "amd64"
+cfssl_owner: "root"
+cfssl_group: "root"
+cfssl_packages:
+  - "cfssl"
+  - "cfssljson"
+  - "cfssl-bundle"
+  - "cfssl-certinfo"
+  - "cfssl-newkey"
+  - "cfssl-scan"
+  - "mkbundle"
+  - "multirootca"
