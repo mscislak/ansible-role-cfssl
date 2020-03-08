@@ -2,7 +2,7 @@
 galaxy_info:
   role_name: cfssl
   author: Maros Scislak
-  description: "Download CloudFlare's PKI/TLS toolkit"
+  description: "Install CFSSL: Cloudflare's PKI and TLS toolkit"
   license: BSD-3-Clause
   min_ansible_version: 2.4
   galaxy_tags:
