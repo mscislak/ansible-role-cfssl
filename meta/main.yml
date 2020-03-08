@@ -6,6 +6,8 @@ galaxy_info:
   min_ansible_version: 2.4
   galaxy_tags:
     - cfssl
+    - pki
+    - tls
   platforms:
     - name: Debian
       versions:
