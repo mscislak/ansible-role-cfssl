@@ -2,7 +2,29 @@
 [![Build Status](https://travis-ci.org/mscislak/ansible-role-cfssl.svg?branch=master)](https://travis-ci.org/mscislak/ansible-role-cfssl)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-## Example
+This role installs CFSSL (Cloudflare's PKI and TLS toolkit) which includes the following binaries:
+- cfssl
+- cfssljson
+- cfssl-bundle
+- cfssl-certinfo
+- cfssl-newkey
+- cfssl-scan
+- mkbundle
+- multirootca
+
+## Requirements
+
+None.
+
+## Role Variables
+
+Please see [default/main.yml](default/main.yml).
+
+## Dependencies
+
+Does not depend on any other roles.
+
+## Example Playbook
 
 ```
 - hosts: all
