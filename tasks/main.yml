@@ -6,7 +6,7 @@
     - "ansible_system|lower != 'linux'"
 
 - name: Include Linux 386 variables
-  include_vars: linux-arm.yml
+  include_vars: linux-386.yml
   when:
     - ansible_architecture in ['i386', 'i686']
 
@@ -20,12 +20,12 @@
   when:
     - ansible_architecture in ['arm', 'aarch64_be', 'aarch64', 'armv7l', 'armv8b', 'armv8l']
 
-- name: Download CFSSL toolkit packages
+- name: Download CFSSL Toolkit binaries.
   get_url:
     url: "https://pkg.cfssl.org/{{ cfssl_version }}/{{ item }}_{{ cfssl_os }}-{{ cfssl_arch }}"
     dest: "{{ cfssl_bin_dir }}/{{ item }}"
-    checksum: "{{ cfssl_checksums[item] }}"
+    checksum: "sha256:{{ cfssl_checksums[cfssl_version][item] }}"
     mode: "0755"
     owner: "root"
     group: "root"
-  with_items: "{{ cfssl_packages }}"
+  with_items: "{{ cfssl_binaries }}"
